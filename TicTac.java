@@ -26,7 +26,9 @@ public class TicTac{
 		System.out.print("Enter player1:");
 		ob.setUserName("player1");
 		n=sc.nextInt();
-		ob.fillValues(n);
+		if(!ob.fillValues(n)) {
+			count--;
+		}
 		ob.check();
 		}
 		else {
